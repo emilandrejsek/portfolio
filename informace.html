@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emil Andrejsek - Informace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="informace.css">
+</head>
+<body>
+    <div class="navbar">
+        <header>
+    <span class="logo" id="logo">Emil Andrejsek</span>
+    
+    <nav id="navbar"> 
+        <a href="index.html">O mně</a>
+        <a href="informace.html">Informace</a>
+        <a href="certifikaty.html">Certifikáty</a>
+    </nav>
+</header>
+    </div>
+
+    <section class="info-section">
+        <h2>Informace</h2>
+        
+        <div class="info-container">
+            <div class="info-box">
+                <h3>Zájmy</h3>
+                <p>Za posledních několik let jsem vyzkoušel mnoho různých kroužků, ale nakonec jsem zůstal u skauta a lezení. V letech předtím jsem navštěvoval zpěv, dramatický kroužek a lukostřelbu. Ve volném čase se věnuju běhání, hraní na ukulele a čtení. Co se týče IT, baví mě hlavně front-end development a na prvním stupni jsem programoval ve Scratchi.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Vlastnosti</h3>
+                <p>Moje silné stránky jsou vedení, týmová spolupráce a empatie, vyrovnanost a přizpůsobivost vůči změnám a uvážlivost při rozhodování. Ve skautu využívám schopnost vedení, organizaci a týmovou spolupráci, zatímco lezení rozvíjí moji vytrvalost, soustředění a řešení problémů pod tlakem.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Zkušenosti</h3>
+                <p>Mám mnoho zkušeností z různých kolektivů, rozvíjím se v práci s dětmi vedením skautské družinky a byl jsem součástí projektu Mezigenerační mosty, který stojí na tvůrčí spolupráci a vzájemném porozumění mezi dětmi a seniory. Staví mosty mezi generacemi a boří mýty o jejich vzájemném nepochopení.<a href="https://youtu.be/Q4tXr1r7x8c" class="link">Více o projektu.</a></p>
+        </div>
+
+        <div class="info-image">
+            <img src="alt.jpg" alt="">
+        </div>
+    </section>
+ <script>
+let logo = document.getElementById('logo');
+let navbar = document.getElementById('navbar');
+
+logo.onclick = () => {
+    navbar.classList.toggle('active');
+};
+
+navbar.onclick = () => {
+    navbar.classList.remove('active');
+};
+</script>
+</body>
+</html>
